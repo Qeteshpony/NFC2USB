@@ -90,6 +90,7 @@ outputs:
     output_id: 30deg
     options:
       ray_tracing: true
+      rotate_z: 9
       rotate_x: 3
       rotate_z: -2
 
