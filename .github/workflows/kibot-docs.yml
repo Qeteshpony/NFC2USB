@@ -1,0 +1,50 @@
+name: Kibot Docs
+
+on:
+  workflow_call:
+    inputs:
+      config-file:
+        required: true
+        type: string
+      board-file:
+        required: true
+        type: string
+
+jobs:
+  render:
+    name: "Render"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Render
+        uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          dir: github-pages
+          config: ${{ inputs.config-file }}
+          board: ${{ inputs.board-file }}
+          skip: run_erc,run_drc
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: github-pages
+
+  deploy:
+    needs: render
+    name: "Deploy"
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
