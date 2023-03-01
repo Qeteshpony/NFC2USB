@@ -1169,7 +1169,7 @@
       (net 18 "/ESP32-S2/GPIO0") (pinfunction "Pin_4") (pintype "passive") (tstamp 4d3c0b15-88f5-4d38-8ee5-079a609469b8))
     (pad "5" thru_hole oval (at 0 10.16 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 "GND") (pinfunction "Pin_5") (pintype "passive") (tstamp e12642f4-e473-43bf-9329-15a1d76cdc56))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1579,7 +1579,7 @@
       (net 28 "/NFC_Reset") (pinfunction "Reset") (pintype "input") (tstamp f3dbd419-d7da-4886-b985-603cc6e51d5f))
     (pad "8" thru_hole oval (at 0 17.78 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 3 "+3V3") (pinfunction "VCC") (pintype "power_in") (tstamp 235d6c33-ad26-4394-96b6-2e578d359f0b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
