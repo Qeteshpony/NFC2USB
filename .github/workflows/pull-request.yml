@@ -10,7 +10,7 @@ on:
 jobs:
   check:
     name: Check
-    uses: .github/workflows/kibot-check.yml@main
+    uses: ./.github/workflows/kibot-check.yml@main
     with:
       config-file: kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb
