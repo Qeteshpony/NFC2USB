@@ -1,5 +1,13 @@
 # NFC2USB
 
+[![CI](https://github.com/Qeteshpony/NFC2USB/actions/workflows/ci.yml/badge.svg)](https://github.com/Qeteshpony/NFC2USB/actions/workflows/ci.yml)
+
+
+![3D Render](https://qeteshpony.github.io/NFC2USB/3D/NFC2USB-3D_top.png)
+
+[Documentation](https://qeteshpony.github.io/NFC2USB)
+
+
 Connect an RC522 based NFC-Reader to your computer using USB
 
 The project is based around an [ESP32-S2FH4](https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf) with it's most basic support components and no RF circuitry since we just need GPIO and processing power. It would have been possible to solve this with a much simpler microcontroller but availability and pricing at the time of development made the ESP32 with built in USB and flash the best choice. 
