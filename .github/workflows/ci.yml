@@ -12,7 +12,7 @@ on:
 jobs:
   check:
     name: Check
-    uses: ./.github/workflows/kibot-check.yml@main
+    uses: ./.github/workflows/kibot-check.yml
     with:
       config-file: kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb
@@ -20,7 +20,7 @@ jobs:
   docs:
     name: Docs
     needs: check
-    uses: ./.github/workflows/kibot-docs.yml@main
+    uses: ./.github/workflows/kibot-docs.yml
     with:
       config-file: kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb
