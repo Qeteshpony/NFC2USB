@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.865,
+          "width": 0.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -361,7 +361,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "NFC-Reader.kicad_pro",
+    "filename": "NFC2USB.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -444,8 +444,8 @@
       ""
     ],
     [
-      "c94e449b-b7c1-4e28-96dd-4a2137a0f708",
-      "ESP32-S2"
+      "70d53594-902a-4a22-a9ca-c5d940f502fc",
+      "RP2040"
     ]
   ],
   "text_variables": {
