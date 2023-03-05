@@ -7,7 +7,7 @@ on:
 
 jobs:
   release-please:
-    uses: Qeteshpony/reusable-workflows/.github/workflows/release-please-workflow.yml
+    uses: Qeteshpony/reusable-workflows/.github/workflows/release-please-workflow.yml@main
     with:
       config-file: release.kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb

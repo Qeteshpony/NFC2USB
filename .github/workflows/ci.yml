@@ -12,7 +12,7 @@ on:
 jobs:
   check:
     name: Check
-    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-check.yml
+    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-check.yml@main
     with:
       config-file: kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb
@@ -20,7 +20,7 @@ jobs:
   docs:
     name: Docs
     needs: check
-    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-docs.yml
+    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-docs.yml@main
     with:
       config-file: kibot.yml
       board-file: pcb/NFC2USB.kicad_pcb
